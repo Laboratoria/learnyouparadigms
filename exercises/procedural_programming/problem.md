@@ -15,58 +15,34 @@ definir sus interfaces (input/output).
 
 ## Tarea
 
-Refactoriza el código del _boilerplate_ en dos funciones, `isPrime` y
-`printPrimes`.
+Se ha creado automáticamente un archivo llamado `procedural.js` en el directorio
+actual. Este archivo contiene con _boilerplate_ (la plantilla sobre la que hacer
+el ejercicio).
 
-Primero envuelve el código en una función con el nombre `printPrimes`. Esta
-función debe recibir dos argumentos (`start`, `end`), que nos permitan
-especificar el rango de números primos que queremos imprimir.
+Refactoriza el código del que vimos en el ejercicio anterior en dos funciones,
+`isPrime(num)` y `getPrimes(start, end)`.
+
+Ya hemos envuelto el código en una función con el nombre `getPrimes`. Esta
+función recibe dos argumentos (`start`, `end`), que nos deben permitir
+especificar el rango de números primos que nos interesa.
 
 En el bucle exterior, tendrás que sustituir el valor inicial de `i` por `start`
 y la condición por `i < end`. Dentro del bucle sólo debe haber un condicional
-que imprima a la consola el número si `isPrime` retorna `true` para ese número.
+que añada el número a la respuesta si `isPrime` retorna `true` para ese número.
 
-El bucle interior quedará dentro de `isPrime` ...
+La función `getPrimes` debe retornar un `array` con los números primos en vez
+de imprimirlos a la consola. Para ello usa una variable donde ir gurdando los
+números primos que vayamos encontrando y al final de la función devuelve
+(retorna) ese array.
 
-## Boilerplate
+El bucle interior (en el que comprobamos si en número es primo) debe quedar
+dentro de `isPrime`, la cual sólo ha recibir un argumento (el número a
+comprobar) y retornar un booleano (`true` o `false`).
 
-```js
-//
-// Calcula todos los números primos menores que `20`.
-//
+Puedes ejecutar el código del ejercicio con el siguiente comando:
 
-function isPrime(num) {
-  //...
-}
+`paradigms run imperative.js`
 
-function printPrimes(start, end) {
-  // Iteramos desde 2 (el primer número primo) hasta 19 (menor que 20)
-  for (var i = 2; i < 20; i++) {
-    // Inicializamos una variable para hacer seguimiento de si el número es primo
-    // o no.
-    var isPrime = true;
+Una vez que estés lista, puedes verificar tu solución con el siguiente comando:
 
-    // Para ver si el número es primo, vamos a tratar de demostrar que NO es
-    // primo, y si no podemos, entonces podemos decir que sí es primo.
-    // Si el número es divisible por cualquier otro entero, que no sea `1` o el
-    // número mismo, sabemos que no es primo.
-    // Iteramos desde 2 hasta `i / 2`. No necesitamos probar números más allá de
-    // `i / 2` porque los valores estarían entre 2 y 1, siempre dejando residuo.
-    for (var j = 2; j <= (i / 2); j++) {
-      // Si `i` (el número que estamos verificando) es divisible por `j` sin dejar
-      // residuo significa que no es primo!
-      if (i % j === 0) {
-        isPrime = false;
-        break; // no necesitamos seguir tratando, ya sabemos que no es primo
-      }
-    }
-
-    // Si el número `i` es primo lo imprimimos en la consola
-    if (isPrime) {
-      console.log(i);
-    }
-  }
-}
-
-module.exports = printPrimes;
-```
+`paradigms verify imperative.js`

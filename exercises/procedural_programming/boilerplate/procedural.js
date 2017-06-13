@@ -6,7 +6,7 @@ function isPrime(num) {
   //...
 }
 
-function printPrimes(start, end) {
+function getPrimes(start, end) {
   // Iteramos desde 2 (el primer número primo) hasta 19 (menor que 20)
   for (var i = 2; i < 20; i++) {
     // Inicializamos una variable para hacer seguimiento de si el número es primo
@@ -35,4 +35,5 @@ function printPrimes(start, end) {
   }
 }
 
-module.exports = printPrimes;
+exports.isPrime = isPrime;
+exports.getPrimes = getPrimes;

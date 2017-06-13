@@ -12,7 +12,7 @@ const app = WorkshopperAdventure({
   appDir: __dirname,
   languages: ['es'],
   header: Header,
-  footer: Footer,
+  //footer: Footer,
   fail: Fail,
   pass: Pass
 });
