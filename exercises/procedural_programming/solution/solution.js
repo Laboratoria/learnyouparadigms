@@ -7,12 +7,13 @@ function isPrime(num) {
   return true;
 }
 
-function printPrimes(start, end) {
+function getPrimes(start, end) {
+  var primes = [];
   for (var i = start; i < end; i++) {
     if (isPrime(i)) {
-      console.log(i);
+      primes.push(i);
     }
   }
 }
 
-printPrimes(2, 20);
+module.exports = getPrimes;

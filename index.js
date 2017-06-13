@@ -19,11 +19,11 @@ const app = WorkshopperAdventure({
 
 
 app.addAll([
-  'IMPERATIVE',
-  'PROCEDURAL',
-  'OOP',
-  'FP',
-  'EOP',
+  'IMPERATIVE PARADIGM',
+  'PROCEDURAL PROGRAMMING',
+  'OBJECT ORIENTED PROGRAMMING',
+  'FUNCTIONAL PROGRAMMING',
+  'EVENT ORIENTED PROGRAMMING',
 ]);
 
 

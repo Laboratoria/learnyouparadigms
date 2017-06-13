@@ -67,4 +67,6 @@ function printPrimes(start, end) {
     }
   }
 }
+
+module.exports = printPrimes;
 ```
