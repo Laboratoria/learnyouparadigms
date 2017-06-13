@@ -1,0 +1,20 @@
+{
+  "name": "learnyouparadigms",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lupomontero/paradigms.git"
+  },
+  "bin": {
+    "paradigms": "./bin/paradigms",
+    "learnyouparadigms": "./bin/paradigms"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "workshopper-adventure": "^6.0.2",
+    "workshopper-exercise": "^3.0.1"
+  }
+}
