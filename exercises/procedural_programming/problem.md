@@ -16,33 +16,61 @@ definir sus interfaces (input/output).
 ## Tarea
 
 Se ha creado automáticamente un archivo llamado `procedural.js` en el directorio
-actual. Este archivo contiene con _boilerplate_ (la plantilla sobre la que hacer
+actual. Este archivo contiene el _boilerplate_ (la plantilla sobre la que hacer
 el ejercicio).
 
-Refactoriza el código del que vimos en el ejercicio anterior en dos funciones,
-`isPrime(num)` y `getPrimes(start, end)`.
+Refactoriza el código que vimos en el ejercicio anterior en dos funciones:
 
-Ya hemos envuelto el código en una función con el nombre `getPrimes`. Esta
-función recibe dos argumentos (`start`, `end`), que nos deben permitir
-especificar el rango de números primos que nos interesa.
+* `getPrimes(start, end)`
+* `isPrime(num)`
 
-En el bucle exterior, tendrás que sustituir el valor inicial de `i` por `start`
-y la condición por `i < end`. Dentro del bucle sólo debe haber un condicional
-que añada el número a la respuesta si `isPrime` retorna `true` para ese número.
+Ya hemos envuelto el código en una función con el nombre `getPrimes`.
 
-La función `getPrimes` debe retornar un `array` con los números primos en vez
-de imprimirlos a la consola. Para ello usa una variable donde ir gurdando los
-números primos que vayamos encontrando y al final de la función devuelve
-(retorna) ese array.
+## Boilerplate
 
-El bucle interior (en el que comprobamos si en número es primo) debe quedar
-dentro de `isPrime`, la cual sólo ha recibir un argumento (el número a
-comprobar) y retornar un booleano (`true` o `false`).
+```js
+function isPrime(num) {
+  //...
+}
+
+function getPrimes(start, end) {
+  for (var i = 2; i < 20; i++) {
+    var isPrime = true;
+
+    //...
+
+    if (isPrime) {
+      console.log(i);
+    }
+  }
+}
+```
+
+## Requisitos
+
+* La función `getPrimes` recibe dos argumentos: `start` y `end`, que nos deben permitir especificar el rango de números primos que nos interesa.
+
+* La función `getPrimes` debe retornar un `array` con los números primos en vez de imprimirlos en la consola. Para ello usa una variable donde ir gurdando los números primos que vayamos encontrando y al final de la función devuelve (retorna) ese array.
+
+* En el bucle de `getPrimes`, tendrás que sustituir el valor inicial de `i` por `start` y la condición por `i < end`.
+
+* Dentro del bucle de `getPrimes` debes invocar a `isPrime` para determinar si el número en cuestión es primo.
+
+* El bucle que en el ejercicio anterior usamos para comprobar si un número es primo, ahora debe quedar dentro de `isPrime`, la cual sólo ha de recibir un argumento (el número a comprobar) y retornar un booleano (`true` o `false`).
+
+* Asegúrate de que tu script exporta las funciones `getPrimes` e `isPrime`.
+
+## Recursos
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
+* https://nodejs.org/api/modules.html#modules_the_module_object
+
+***
 
 Puedes ejecutar el código del ejercicio con el siguiente comando:
 
-`paradigms run imperative.js`
+`paradigms run procedural.js`
 
 Una vez que estés lista, puedes verificar tu solución con el siguiente comando:
 
-`paradigms verify imperative.js`
+`paradigms verify procedural.js`

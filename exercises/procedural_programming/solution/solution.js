@@ -14,6 +14,8 @@ function getPrimes(start, end) {
       primes.push(i);
     }
   }
+  return primes;
 }
 
-module.exports = getPrimes;
+exports.getPrimes = getPrimes;
+exports.isPrime = isPrime;

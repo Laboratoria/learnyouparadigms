@@ -63,6 +63,7 @@ for (var i = 2; i < 20; i++) {
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 
+***
 
 Puedes ejecutar el código del ejercicio con el siguiente comando:
 
