@@ -2,8 +2,8 @@
   "title": "Paradigmas de Programación",
   "common": {},
   "exercise": {
-    "IMPERATIVE PARADIGM": "Paradigma imperativo",
-    "PROCEDURAL PROGRAMMING": "Programación orientada a procedimientos (Procedural Programming)",
+    "IMPERATIVE PARADIGM": "Paradigma imperativo (Imperative)",
+    "PROCEDURAL PROGRAMMING": "Programación orientada a procedimientos (Procedural)",
     "OBJECT ORIENTED PROGRAMMING": "Programación orientada a objetos (OOP)",
     "FUNCTIONAL PROGRAMMING": "Programación Funcional (FP)"
   },

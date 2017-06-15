@@ -1,7 +1,7 @@
 'use strict';
 
 
-describe('getPrimes (procedural)', () => {
+describe('getPrimes(start, end)', () => {
 
   it('debería exportar función `getPrimes`', () => {
 

@@ -1,7 +1,7 @@
 'use strict';
 
 
-describe('isPrime (procedural)', () => {
+describe('isPrime(num)', () => {
 
   it('debería exportar función `isPrime`', () => {
 
