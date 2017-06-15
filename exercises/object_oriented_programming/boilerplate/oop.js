@@ -17,24 +17,9 @@ function Notes() {
 }
 
 Notes.prototype.add = function (note) {
-  if (!(note instanceof Note)) {
-    throw new Error('Wrong type!');
-  }
-
-  this.data.unshift(note);
+  //...
 };
 
 Notes.prototype.toString = function () {
-  let str = '';
-  for (let i = 0; i < this.data.length; i++) {
-    if (i > 0) {
-      str += '\n';
-    }
-    str += this.data[i].toString();
-  }
-  return str;
+  //...
 };
-
-
-exports.Note = Note;
-exports.Notes = Notes;
