@@ -48,17 +48,17 @@ function getPrimes(start, end) {
 
 ## Requisitos
 
-* La función `getPrimes` recibe dos argumentos: `start` y `end`, que nos deben permitir especificar el rango de números primos que nos interesa.
+* La función `getPrimes()` recibe dos argumentos: `start` y `end`, que nos deben permitir especificar el rango de números primos que nos interesa.
 
-* La función `getPrimes` debe retornar un `array` con los números primos en vez de imprimirlos en la consola. Para ello usa una variable donde ir gurdando los números primos que vayamos encontrando y al final de la función devuelve (retorna) ese array.
+* La función `getPrimes()` debe retornar un `array` con los números primos en vez de imprimirlos en la consola. Para ello usa una variable donde ir gurdando los números primos que vayamos encontrando y al final de la función devuelve (retorna) ese array.
 
-* En el bucle de `getPrimes`, tendrás que sustituir el valor inicial de `i` por `start` y la condición por `i < end`.
+* En el bucle de `getPrimes()`, tendrás que sustituir el valor inicial de `i` por `start` y la condición por `i < end`.
 
-* Dentro del bucle de `getPrimes` debes invocar a `isPrime` para determinar si el número en cuestión es primo.
+* Dentro del bucle de `getPrimes()` ya no necesitamos la variable `isPrime`, ahora debes invocar a la función `isPrime()` para determinar si el número en cuestión es primo.
 
-* El bucle que en el ejercicio anterior usamos para comprobar si un número es primo, ahora debe quedar dentro de `isPrime`, la cual sólo ha de recibir un argumento (el número a comprobar) y retornar un booleano (`true` o `false`).
+* El bucle que en el ejercicio anterior usamos para comprobar si un número es primo, ahora debe quedar dentro de `isPrime()`, la cual sólo ha de recibir un argumento (el número a comprobar) y retornar un booleano (`true` o `false`).
 
-* Asegúrate de que tu script exporta las funciones `getPrimes` e `isPrime`.
+* Asegúrate de que tu script exporta las funciones `getPrimes()` e `isPrime()`.
 
 ## Recursos
 
